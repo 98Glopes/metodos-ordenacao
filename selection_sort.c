@@ -3,7 +3,7 @@
 void main(void)
 {
 
-    int input[] = {10, 12, 45, 23, 123, 23, 50, 11};
+    int input[] = {10, 12, 45, 23, 123, 23, 10, 11};
     int input_size = (sizeof input)/4;
 
     int menor_valor = 0;
@@ -14,6 +14,7 @@ void main(void)
     for(i = 0; i < input_size; i++)
     {
         menor_valor = input[i];
+        k = i;
         for(j = i+1; j < input_size; j++)
         {
             if(input[j] < menor_valor)
@@ -31,6 +32,8 @@ void main(void)
 
     for(i = 0; i < input_size; i++)
     {
-     //   printf("%i", input[i]);
+       printf(" %i -", input[i]);
+       
     }
+    printf("\n");
 }
